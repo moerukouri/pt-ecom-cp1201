@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>eCommerce</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela Round">
+    <link rel="stylesheet" href="storeCSS.css">
+    <script src="https://kit.fontawesome.com/116f25b7f7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="topheader">
+            <div id="title">
+                <h1>Kouri's <span>Curios</span></h1>
+            </div>
+            <div id="utility">
+                <div class="basket-icon">
+                    <a><i class="fa-solid fa-basket-shopping"></i></a>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+        <div id="header-text">
+            <h1>"Curiosity awaits at every corner; Find what you seek, and maybe a little more."</h1>
+        </div>
+    </div>
+
+
+    <div id="store">
+        <div id="category">
+            <nav>
+                <ul>
+                    <li><button data-category="All">All</button></li>
+                    <li><button data-category="weapons">Weapons</button></li>
+                    <li><button data-category="armor">Armor</button></li>
+                    <li><button data-category="potions">Potions</button></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <main>
+            <div class="item-list">
+                <div class="item" data-category="weapons">
+                    <img src="rh.jpeg" alt="">
+                    <h1 class="item-title">Runaan's Hurricane</h1>
+
+                    <div class="item-price">
+                        <div class="price">2650 Gold</div>
+                        <i class="fa-solid fa-plus add-to-basket"></i>
+                    </div>
+                </div>
+                <div class="item" data-category="weapons">
+                    <img src="as.jpeg" alt="">
+                    <h1 class="item-title">Archangel's Staff</h1>
+
+                    <div class="item-price">
+                        <div class="price">2900 Gold</div>
+                        <i class="fa-solid fa-plus add-to-basket"></i>
+                    </div>
+                </div>
+                <div class="item" data-category="armor">
+                    <img src="gs.jpeg" alt="">
+                    <h1 class="item-title">Gargoyle Stoneplate</h1>
+
+                    <div class="item-price">
+                        <div class="price">2000 Gold</div>
+                        <i class="fa-solid fa-plus add-to-basket"></i>
+                    </div>
+                </div>
+                <div class="item" data-category="armor">
+                    <img src="wa.jpeg" alt="">
+                    <h1 class="item-title">Warmog's Armor</h1>
+
+                    <div class="item-price">
+                        <div class="price">2850 Gold</div>
+                        <i class="fa-solid fa-plus add-to-basket"></i>
+                    </div>
+                </div>
+                <div class="item" data-category="potions">
+                    <img src="hp.jpeg" alt="">
+                    <h1 class="item-title">Health Potion</h1>
+
+                    <div class="item-price">
+                        <div class="price">50 Gold</div>
+                        <i class="fa-solid fa-plus add-to-basket"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-close">
+                    <i class="fa-solid fa-close"></i>
+                </div>
+                <div class="basket">
+                    <h1>My Basket</h1>
+                    <div class="basket-items"></div>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="total-amount">
+                        <p>Total</p>
+                        <div class="basket-total">0 Gold</div>
+                    </div>
+                    <button class="buy-btn">Buy</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="storeJS.js"></script>
+</body>
+</html>
